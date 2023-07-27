@@ -53,7 +53,7 @@
           </nav>
 
                               <!-- slider or carousel container -->
-                              <div class="carousel w-9/12 bg-base-50 mx-60 mt-5">
+                              <div class="carousel w-9/12 h-[720px] bg-base-50 mx-60 mt-5">
                               
                                            <!-- slide 1 -->
                                 <div id="slide1" class="carousel-item relative w-full">
@@ -245,43 +245,83 @@
 <main>
 
                <!-- deal of the day section -->
-          <section class="flex justify-around">
-            <div>
-              <h1>Deal of the day</h1>
-              <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <section class="flex justify-around mt-20">
+            <div class="w-[550px] border-2 rounded-sm">
+              <h1 class="text-5xl font-bold">Deal of the day</h1>
+              <p class="text-sm mt-2">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
                
             <!-- countdown section -->
             <div>
               <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl pl-10">
-                    <span style="--value:15;"></span>:
+                <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
                   </span>
                   days
                 </div> 
-                <div class="flex flex-col">
+                <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                   <span class="countdown font-mono text-5xl">
                     <span style="--value:10;"></span>
                   </span>
                   hours
                 </div> 
-                <div class="flex flex-col">
+                <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                   <span class="countdown font-mono text-5xl">
                     <span style="--value:24;"></span>
                   </span>
                   min
                 </div> 
-                <div class="flex flex-col">
+                <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                   <span class="countdown font-mono text-5xl">
-                    <span style="--value:32;"></span>
+                    <span style="--value:44;"></span>
                   </span>
                   sec
                 </div>
               </div>
             </div>
-                     <!--  -->
+                               <!--  -->
           </section>
+
+                            <!-- card section -->
+
+          <section class="h-[400px]">
+
+                <div>
+
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+
+                              <!-- rating -->
+                              <div class="rating rating-lg rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                              </div>
+
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+          </section>
+          
 </main>
 
 <footer></footer>
